@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="short icon" type="image/x-icon" href="/assets/titleimage9.ico">
+    <title>알고보니연구소장의 블로그</title>
+    <style>
+        /*
+        *{
+            font-family: Arial, Helvetica, sans-serif;font-size: 1.2em;font-weight:bolder;color:#FFFFF0;
+            background:rgb(88,75,57);
+        }
+        */
+        body{
+            background-color:var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-hightlight-color:rgba(0,0,0,0);
+        }
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        .navbar > .container{
+            display:flex;
+            flex-wrap:inherit;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .navbar-expand-lg{
+            flex-wrap:nowrap;
+            justify-content: flex-start;
+        }
+        .navbar-light{
+            color:rgba(0,0,0,0.9);
+        }
+        .px-lg-3{
+            padding-right: lrem !important;
+            padding-left: 1rem !important;
+        }
+        .py-3{
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+        .py-lg-4{
+            padding-top:1.5rem !important;
+            padding-bottom:1.5rem !important;
+        }
+        .px-4{
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+        }
+        .px-lg-5{
+            padding-left:3rem !important;
+            padding-right:3rem !important;
+        }
+        #mainNav{
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            z-index: 1030;
+            border-bottom:1px solid #dee2e6;
+            background-color: #fff;
+            font-family:"Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji";
+        }
+        #mainNav .navbar-brand{
+            font-weight:800;
+        }
+        .navbar-light .navbar-brand{
+            color:rgba(0,0,0,0.9);
+        }
+        .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+            color:rgba(0,0,0,0.9);
+        }
+        button{
+            text-transform:none;
+        }
+        button{
+            margin:0;
+            font-family:inherit;
+            font-size:inherit;
+            line-height:inherit;
+        }
+        button{
+            writing-mode: horizontal-tb;
+            -webkit-writing-mode:horizontal-tb !important;
+            text-rendering: auto;
+            color:-internal-light-dark(black,white);
+            letter-spacing:normal;
+            word-spacing:normal;
+            line-height:normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow:none;
+            text-align:center;
+            cursor:default;
+        }
+        button:not(:disabled), [type=button]:not(:disable) ,[type=reset]:not(:disabled), [type="submit"]:not(:disabled){
+            cursor:pointer;
+        }
+        #mainNav.navbar-toggler{
+            font-weight:800;
+            font-size:0.75rem;
+            padding:0.75rem;
+            text-transform: uppercase;
+        }
+        .navbar .navbar-toggler{
+            color:rgba(0,0,0,0.55);
+            border-color:rgba(0,0,0,0.1);
+        }
+        .navbar-collapse{
+            flex-basis:100%;
+            flex-grow:1;
+            align-items:center;
+        }
+        .navbar-light .navbar-nav .nav-link{
+            color:rgba(0,0,0,0.55);
+        }
+        .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+            color:rgba(0,0,0,0.7);
+        }
+        .navbar-light .navbar-nav .nav-link.disabled{
+            color: rgba(0,0,0,0.3);
+        }
+        .navbar-light .navbar-nav .nav-link.active{
+            color:rgba(0,0,0,0.9);
+        }
+        .svg-inline--fa{
+            display:inline-block;
+            font-size:inherit;
+            height:1em;
+            overflow:visible;
+            vertical-align:-0.125em;
+        }
+        :not(svg){
+            transform-origin: 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/">알고보니연구소장의 블로그</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg>
+                </svg>
+                <!--<i class="far fa-bars"></i>-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">메인홈</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about">블로그소개</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/create">새글발행</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/contact">네이버서비스</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

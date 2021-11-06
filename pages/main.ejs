@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 효과 시험용</title>
+    <style>
+        a:link{
+            opacity: 0.5;
+        }
+        .navbar a:hover{
+            opacity: 1.0;
+        }
+        sidebar{
+            position:relative;
+            left: 300px;
+            top:0px;
+            border:1px solid sandybrown;
+            background-color:skyblue;
+            width: 400px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <div class="navbar">
+        <span>
+            네이버 블로그가 점검중이라 만든 블로그 구현 Copyright&#64; By GYCCHANG
+        </span>
+        <div>
+            <a href="https://www.google.com/">구글 웹 사이트</a>
+        </div>
+        <p id="upload">
+            <button type="button" value="업로드" id="uploadBtn" onclick="location.href=`/upload`">업로드하러가기</button>
+        </p>
+    </div>
+    <sidebar>
+        <span>
+            <a href="/upload" target="if_sidebar">업로드하기</a>
+        </span>
+        <iframe width="400" height="250" name="if_sidebar" frameborder="0"></iframe>
+    </sidebar>
+</body>
+<script>
+    var arr=[
+        {category : 'IT', backnumber : '1'}
+        ,{category: 'PHYSICES', backnumber : '2'}
+    ];
+    $(document).ready(function(){
+        var every = document.getElementsByTagName('div');
+        every.foreach(function(elements){
+            every.fadeOut(1000, function(){
+                $('span').fadeIn(1000);
+            });
+        })
+    });
+</script>
+</html>
